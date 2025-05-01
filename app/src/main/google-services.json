@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "906487340151",
+    "project_id": "movieapp-85541",
+    "storage_bucket": "movieapp-85541.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906487340151:android:6bd465681e073ff894fa72",
+        "android_client_info": {
+          "package_name": "com.sdp.movietime"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhqTtXci82Y5CUBH81AqilPIx1kkRmvAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

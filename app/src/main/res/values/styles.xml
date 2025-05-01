@@ -1,0 +1,20 @@
+<resources>
+    <!-- Base Theme -->
+    <style name="Theme.MovieTime" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+    </style>
+
+    <!-- Custom RatingBar Style -->
+    <style name="RatingBarStyle" parent="Widget.AppCompat.RatingBar">
+        <item name="android:progressTint">@color/gold</item> <!-- Star color -->
+        <item name="android:secondaryProgressTint">@color/gold</item>
+        <item name="android:progressBackgroundTint">@color/gray</item>
+    </style>
+    <style name="CustomRatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="android:minHeight">20dp</item>
+        <item name="android:maxHeight">20dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- ScrollView for the Settings Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="App Settings"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/gold"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Cellular Data Usage -->
+            <TextView
+                android:id="@+id/cellularDataUsage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cellular Data Usage"
+                android:textSize="16sp"
+                android:textColor="@color/blue"
+                android:padding="12dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#444"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Wi-Fi Only Toggle -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wi-Fi Only"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue"
+                    android:layout_weight="1"/>
+
+                <Switch
+                    android:id="@+id/wifiOnlySwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#444"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Video Quality -->
+            <TextView
+                android:id="@+id/videoQuality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Video Quality"
+                android:textSize="16sp"
+                android:textColor="@color/blue"
+                android:padding="12dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#444"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Delete All Downloads -->
+            <TextView
+                android:id="@+id/deleteDownloads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete All Downloads"
+                android:textSize="16sp"
+                android:textColor="#FF3B30"
+                android:padding="12dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#444"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Mode (Light/Dark) Toggle -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dark Mode"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue"
+                    android:layout_weight="1"/>
+
+                <Switch
+                    android:id="@+id/modeSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- BottomNavigationView -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nav_menu"
+        app:labelVisibilityMode="labeled"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

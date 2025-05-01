@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="?android:attr/selectableItemBackground">
+    <ImageView
+        android:id="@+id/wishlistMovieImage"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/wishlistMovieTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Movie Title"
+        android:textSize="16sp"
+        android:padding="8dp"/>
+
+    <ImageView
+        android:id="@+id/removeWishlistButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_delete"
+        android:contentDescription="Remove from Wishlist"
+        android:padding="4dp"/>
+
+</LinearLayout>
